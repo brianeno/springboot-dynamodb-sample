@@ -1,0 +1,15 @@
+curl --location 'localhost:8080/api/chargesession/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "transactionId": "25",
+    "vin": "4Y1SL65848Z411439",
+    "sessionDate": "2024-01-07",
+    "meterValueList": [
+        {
+            "meterValueType": "START",
+            "key": "initial_watts",
+            "value": "205"
+        }
+    ],
+    "completed": false
+}'

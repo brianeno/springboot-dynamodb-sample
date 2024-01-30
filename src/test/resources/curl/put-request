@@ -1,0 +1,15 @@
+curl --location --request PUT 'localhost:8080/api/chargesession/88d2691f-e6b1-4977-985c-a6a75ab29d7c' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+     "transactionId": "25",
+     "vin": "4Y1SL65848Z411439",
+     "sessionDate": "2024-01-07",
+     "meterValueList": [
+         {
+             "meterValueType": "END",
+             "key": "initial_watts",
+             "value": "275"
+         }
+     ],
+     "completed": true
+}'

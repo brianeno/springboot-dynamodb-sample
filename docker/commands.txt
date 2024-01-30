@@ -1,0 +1,11 @@
+
+aws dynamodb create-table --endpoint-url http://localhost:8000 --table-name chargesession-log --attribute-definitions AttributeName=id,AttributeType=S --key-schema AttributeName=id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=2,WriteCapacityUnits=2
+
+aws dynamodb list-tables --endpoint-url http://localhost:8000
+
+aws dynamodb get-item --endpoint-url http://localhost:8000 \
+    --table-name chargesession-log \
+    --key '{"id": {"S":"5e367672-64bb-450b-b153-ad5883e0b814"}}'
+
+
+aws dynamodb describe-limits --endpoint-url http://localhost:8000 --region us-east-1

@@ -1,0 +1,1 @@
+curl --location 'localhost:8080/api/chargesession/88d2691f-e6b1-4977-985c-a6a75ab29d7c'
